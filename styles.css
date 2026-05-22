@@ -839,6 +839,11 @@ h2 {
 
   .hero-subtitle {
     font-size: 1rem;
+    max-width: 20rem;
+  }
+
+  .hero-panel div:nth-child(3) {
+    display: none;
   }
 
   .button {
@@ -848,6 +853,90 @@ h2 {
   .section,
   .signal-strip {
     width: calc(100% - 32px);
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-heading {
+    gap: 0;
+    margin-bottom: 22px;
+  }
+
+  .section-heading p,
+  .proof-copy p,
+  .review-copy p,
+  .directions-copy p {
+    display: none;
+  }
+
+  .section h2,
+  .proof-copy h2,
+  .review-copy h2,
+  .directions-copy h2,
+  .contact h2 {
+    font-size: clamp(2rem, 10vw, 2.65rem);
+    line-height: 0.94;
+  }
+
+  .signal-strip {
+    margin-top: -18px;
+  }
+
+  .signal-strip div {
+    padding: 15px 16px;
+  }
+
+  .signal-strip strong {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .signal-strip span {
+    display: none;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-card {
+    min-height: 132px;
+    padding: 16px;
+  }
+
+  .service-number {
+    margin-bottom: 22px;
+    font-size: 0.78rem;
+  }
+
+  .service-card h3 {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1;
+  }
+
+  .service-card p {
+    display: none;
+  }
+
+  .proof {
+    gap: 22px;
+  }
+
+  .proof-image,
+  .proof-image img {
+    min-height: 300px;
+  }
+
+  .check-list {
+    margin-top: 22px;
+    gap: 10px;
+  }
+
+  .check-list li:nth-child(n + 3) {
+    display: none;
   }
 
   .work-grid {
@@ -889,6 +978,52 @@ h2 {
     max-width: calc(100% - 20px);
     padding: 8px 9px;
     font-size: 0.66rem;
+  }
+
+  .reviews {
+    gap: 18px;
+  }
+
+  .review-score {
+    min-height: 210px;
+  }
+
+  .review-score strong {
+    font-size: clamp(4rem, 22vw, 5.3rem);
+  }
+
+  .directions {
+    gap: 22px;
+  }
+
+  .route-list {
+    margin: 22px 0 16px;
+  }
+
+  .route-list div {
+    padding: 15px 16px;
+  }
+
+  .route-list div:nth-child(2) {
+    display: none;
+  }
+
+  .map-shell,
+  .map-shell iframe {
+    min-height: 320px;
+  }
+
+  .contact {
+    gap: 22px;
+  }
+
+  .contact-list {
+    margin-top: 4px;
+  }
+
+  .contact-list div:nth-child(3),
+  .contact-list div:nth-child(4) {
+    display: none;
   }
 
   .site-footer {
