@@ -1,0 +1,5 @@
+output/
+server.log
+server.err.log
+.DS_Store
+Thumbs.db
