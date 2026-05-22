@@ -387,6 +387,10 @@ h2 {
   letter-spacing: 0;
 }
 
+.mobile-title {
+  display: none;
+}
+
 .section-heading p,
 .proof-copy p,
 .review-copy p {
@@ -751,6 +755,7 @@ h2 {
 
   .hero-grid,
   .section-heading,
+  .section-heading.wide,
   .proof,
   .reviews,
   .directions,
@@ -847,11 +852,43 @@ h2 {
 
   .work-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .work-item,
   .work-item.tall {
-    min-height: 390px;
+    min-height: 320px;
+  }
+
+  .work .section-heading {
+    gap: 0;
+    margin-bottom: 24px;
+  }
+
+  .work .section-heading p {
+    display: none;
+  }
+
+  .work h2 {
+    max-width: 10ch;
+    font-size: clamp(2.35rem, 11vw, 2.75rem);
+    line-height: 0.9;
+  }
+
+  .desktop-title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: inline;
+  }
+
+  .work-item figcaption {
+    left: 10px;
+    right: auto;
+    max-width: calc(100% - 20px);
+    padding: 8px 9px;
+    font-size: 0.66rem;
   }
 
   .site-footer {
